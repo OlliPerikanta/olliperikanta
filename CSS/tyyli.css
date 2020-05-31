@@ -1,0 +1,1341 @@
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-family: 'Cormorant', serif;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/*---------------------------------------------------------------------------*/
+
+/*YLEISASETUKSIA*/
+
+/*---------------------------------------------------------------------------*/
+
+body {
+    margin: 0;
+}
+
+h2 {
+    margin-bottom: 30px;
+}
+
+.container-fluid .osio .kuva {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+.underline {
+    margin-top: 20px;
+    border-bottom: 2px solid red;
+    width: 100px;
+    display: block;
+}
+
+hr {
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+    width: 70%;
+    border-color: black;
+
+}
+
+.keskitys {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#otsikko1 {
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 50px !important;
+    color: #424748;
+}
+
+#otsikko2 {
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 50px !important;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #424748;
+}
+
+#otsikko3 {
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 50px !important;
+    padding-right: 60px;
+    padding-left: 60px;
+    color: #424748;
+    margin-top: 20px;
+}
+
+.osio p {
+    font-size: 18px;
+}
+
+.osio {
+    height: auto;
+    text-align: left;
+    margin-bottom: inherit;
+    color: black;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1400px;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.osio h1 {
+    padding-top: 20px;
+}
+
+#tekstikohdat h2 {
+    font-size: 40px;
+}
+
+#tekstikohdat {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+/*---------------------------------------------------------------------------*/
+
+/*NAVIGAATIO*/
+
+/*---------------------------------------------------------------------------*/
+
+.navbar-default {
+    z-index: 500;
+    background-color: #2E2E2E !important;
+}
+
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+    background-color: #2E2E2E !important;
+}
+
+.navigaatio {
+    margin-top: 5px;
+    background-color: #2E2E2E;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.dropdown-menu {
+    background-color: #2E2E2E;
+}
+
+.dropdown-menu > li > a:focus,
+.dropdown-menu > li > a:hover {
+    background-color: #5e5e5e;
+}
+
+.navbar-default .navbar-toggle:hover {
+    background-color: #2E2E2E !important;
+}
+
+.navbar-default .navbar-toggle:focus {
+    background-color: #2E2E2E !important;
+}
+
+
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:focus,
+.navbar-default .navbar-nav > .open > a:hover {
+    background-color: #2E2E2E;
+}
+
+.navbar-default .navbar-brand {
+    color: #fff;
+    font-size: 30px;
+}
+
+.navbar-default .navbar-brand:focus {
+    color: #fff;
+}
+
+.navbar-default .navbar-brand:hover {
+    color: #5e5e5e;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: #fff;
+}
+
+.navbar-default .navbar-nav > li > a:focus,
+.navbar-default .navbar-nav > li > a:hover {
+    color: #5e5e5e;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #fff;
+}
+
+/*---------------------------------------------------------------------------*/
+
+/*ALOITUS-OSIO*/
+
+/*---------------------------------------------------------------------------*/
+
+.flex-container {
+    background: url(../IMG/ajatteleva3.jpg);
+    -webkit-background-position: center;
+    -moz-background-position: center;
+    -o-background-position: center;
+    background-position: center;
+    -webkit-background-repeat: no-repeat;
+    -moz-background-repeat: no-repeat;
+    -o-background-repeat: no-repeat;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+    -webkit-box-shadow: inset 0 0 100px rgba(0, 0, 0, .5);
+    box-shadow: inset 0 0 100px rgba(0, 0, 0, .5);
+    line-height: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+
+}
+
+.teksti2 {
+
+    text-align: center;
+    padding-right: 10px;
+    padding-left: 10px;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, .5);
+    color: #fff;
+}
+
+.teksti2 h1 {
+    font-size: 63px;
+}
+
+.teksti2 p {
+    font-size: 25px;
+}
+
+.btn-info {
+    border-radius: 25px;
+
+}
+
+.ylos {
+    -webkit-animation: tekstiylos 1.5s;
+    -webkit-animation-fill-mode: forwards;
+    animation: tekstiylos 1.5s;
+    animation-fill-mode: forwards;
+    position: relative;
+}
+
+
+@-webkit-keyframes tekstiylos {
+    from {
+        opacity: 0;
+        bottom: -500px;
+    }
+    to {
+        opacity: 1;
+        bottom: 0px;
+
+    }
+}
+
+@keyframes tekstiylos {
+    from {
+        opacity: 0;
+        bottom: -500px;
+    }
+    to {
+        opacity: 1;
+        bottom: 0px;
+
+    }
+}
+
+#section05 a span {
+    display: table-cell;
+    position: relative;
+    top: 40%;
+    width: 24px;
+    height: 24px;
+    margin-left: -12px;
+    border-left: 3px solid #fff;
+    border-bottom: 3px solid #fff;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    -webkit-animation: nuoli 1.5s infinite;
+    animation: nuoli 1.5s infinite;
+    box-sizing: border-box;
+}
+
+@-webkit-keyframes nuoli {
+    0% {
+        transform: rotate(-45deg) translate(0, 0);
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        transform: rotate(-45deg) translate(-20px, 20px);
+        opacity: 0;
+    }
+}
+
+@keyframes nuoli {
+    0% {
+        transform: rotate(-45deg) translate(0, 0);
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        transform: rotate(-45deg) translate(-20px, 20px);
+        opacity: 0;
+    }
+}
+
+.demo a {
+    bottom: 20px;
+    z-index: 4444;
+    display: inline-block;
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    color: #fff;
+    font: normal 400 17px/1 'Josefin Sans', sans-serif;
+    letter-spacing: .1em;
+    text-decoration: none;
+    transition: opacity .3s;
+}
+
+.demo a:hover {
+    opacity: .5;
+}
+
+/*---------------------------------------------------------------------------*/
+
+/*MINUSTA-OSIO*/
+
+/*---------------------------------------------------------------------------*/
+
+.sivulle {
+
+    -webkit-animation: tekstisivulle 1.5s;
+    -webkit-animation-fill-mode: forwards;
+    -webkit-animation-delay: 0.7s;
+    animation: tekstisivulle 1.5s;
+    animation-fill-mode: forwards;
+    animation-delay: 0.7s;
+    position: relative;
+    left: -700px;
+    opacity: 0;
+}
+
+
+@-webkit-keyframes tekstisivulle {
+    100% {
+        opacity: 1;
+        left: 0px;
+    }
+}
+
+@keyframes tekstisivulle {
+    100% {
+        opacity: 1;
+        left: 0px;
+    }
+}
+
+.sivulle2 {
+
+    -webkit-animation: tekstisivulle 1.5s;
+    -webkit-animation-fill-mode: forwards;
+    -webkit-animation-delay: 1.5s;
+    animation: tekstisivulle 1.5s;
+    animation-fill-mode: forwards;
+    animation-delay: 1.5s;
+    position: relative;
+    left: -700px;
+    opacity: 0;
+
+}
+
+
+@-webkit-keyframes tekstisivulle {
+    100% {
+        opacity: 1;
+        left: 0px;
+    }
+}
+
+@keyframes tekstisivulle {
+    100% {
+        opacity: 1;
+        left: 0px;
+    }
+}
+
+.sivulle3 {
+
+    -webkit-animation: tekstisivulle 1.5s;
+    -webkit-animation-fill-mode: forwards;
+    -webkit-animation-delay: 2s;
+    animation: tekstisivulle 1.5s;
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
+    position: relative;
+    left: -700px;
+    opacity: 0;
+}
+
+
+@-webkit-keyframes tekstisivulle {
+    100% {
+        opacity: 1;
+        left: 0px;
+    }
+}
+
+@keyframes tekstisivulle {
+    100% {
+        opacity: 1;
+        left: 0px;
+    }
+}
+
+.sivulle4 {
+
+    -webkit-animation: tekstisivulle 1.5s;
+    -webkit-animation-fill-mode: forwards;
+    -webkit-animation-delay: 2.7s;
+    animation: tekstisivulle 1.5s;
+    animation-fill-mode: forwards;
+    animation-delay: 2.7s;
+    position: relative;
+    left: -700px;
+    opacity: 0;
+}
+
+
+@-webkit-keyframes tekstisivulle {
+    100% {
+        opacity: 1.7s;
+        left: 0px;
+    }
+}
+
+@keyframes tekstisivulle {
+    100% {
+        opacity: 1;
+        left: 0px;
+    }
+}
+
+
+.fa-pencil {
+    color: #379aff !important;
+    font-size: 36px;
+    border: 2px solid;
+    padding: 30px 35px;
+    border-radius: 50%;
+}
+
+.fa-male {
+    color: #379aff !important;
+    font-size: 36px;
+    border: 2px solid;
+    padding: 30px 40px;
+    border-radius: 50%;
+}
+
+.fa-gear {
+    color: #379aff !important;
+    font-size: 36px;
+    border: 2px solid;
+    padding: 30px 35px;
+    border-radius: 50%;
+}
+
+.fa-desktop {
+    color: #379aff !important;
+    font-size: 36px;
+    border: 2px solid;
+    padding: 30px 35px;
+    border-radius: 50%;
+}
+
+.sanoma {
+    text-align: center;
+}
+
+/*---------------------------------------------------------------------------*/
+
+/*PARALLAX-OSIO*/
+
+/*---------------------------------------------------------------------------*/
+
+.olli {
+    background-image: url(../IMG/uusitausta.jpg);
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 0;
+    margin: 0;
+    height: 500px;
+    -webkit-background-attachment: fixed;
+    -moz-background-attachment: fixed;
+    -o-background-attachment: fixed;
+    background-attachment: fixed;
+    -webkit-background-position: center center;
+    -moz-background-position: center center;
+    -o-background-position: center center;
+    background-position: center center;
+    -webkit-background-repeat: no-repeat;
+    -moz-background-repeat: no-repeat;
+    -o-background-repeat: no-repeat;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.linkki {
+    position: relative;
+    top: 40%;
+    width: 100%;
+    text-align: center;
+}
+
+a.btn.btn-primary {
+
+    color: #fff;
+    background-color: transparent;
+    border-color: #fffbfb !important;
+    outline: none;
+    margin: auto;
+    font-size: 20px;
+    padding: 10px 15px;
+    transition: 0.2s background-color;
+    border-radius: 25px;
+}
+
+a.btn.btn-primary:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+a.btn.btn-primary:active {
+    transform: translateY(1px);
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/*---------------------------------------------------------------------------*/
+
+/*PROJEKTI-OSIO*/
+
+/*---------------------------------------------------------------------------*/
+
+.mobiili-sijainti {
+    margin-top: 0px;
+}
+
+.mobiili-kuva {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: -15px !important;
+    margin-right: -15px !important;
+    padding-left: 0px;
+    padding-right: 0px;
+    width: auto;
+}
+
+.progress-bar {
+    background-color: #379aff !important;
+}
+
+.progress {
+    background-color: #E1E1E1 !important;
+}
+
+#dokumentti {
+    -webkit-animation: siirto 3s;
+    -webkit-animation-fill-mode: forwards;
+    animation: siirto 3s;
+    animation-fill-mode: forwards;
+    position: relative;
+}
+
+@-webkit-keyframes siirto {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 90%;
+    }
+}
+
+@keyframes siirto {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 90%;
+    }
+}
+
+#tyylia {
+    -webkit-animation: siirto2 3s;
+    -webkit-animation-fill-mode: forwards;
+    animation: siirto2 3s;
+    animation-fill-mode: forwards;
+    position: relative;
+}
+
+@-webkit-keyframes siirto2 {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 85%;
+    }
+}
+
+@keyframes siirto2 {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 85%;
+    }
+}
+
+#scriptii {
+    -webkit-animation: siirto3 3s;
+    -webkit-animation-fill-mode: forwards;
+    animation: siirto3 3s;
+    animation-fill-mode: forwards;
+    position: relative;
+}
+
+@-webkit-keyframes siirto3 {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 55%;
+    }
+}
+
+@keyframes siirto3 {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 55%;
+    }
+}
+
+#jeeguery {
+    -webkit-animation: siirto4 3s;
+    -webkit-animation-fill-mode: forwards;
+    animation: siirto4 3s;
+    animation-fill-mode: forwards;
+    position: relative;
+}
+
+@-webkit-keyframes siirto4 {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 70%;
+    }
+}
+
+@keyframes siirto4 {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 70%;
+    }
+}
+
+#bootstrappi {
+    -webkit-animation: siirto5 3s;
+    -webkit-animation-fill-mode: forwards;
+    animation: siirto5 3s;
+    animation-fill-mode: forwards;
+    position: relative;
+}
+
+@-webkit-keyframes siirto5 {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 90%;
+    }
+}
+
+@keyframes siirto5 {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 90%;
+    }
+}
+
+
+#wordpressi {
+
+    -webkit-animation: siirto6 3s;
+    -webkit-animation-fill-mode: forwards;
+    animation: siirto6 3s;
+    animation-fill-mode: forwards;
+    position: relative;
+}
+
+
+@-webkit-keyframes siirto6 {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 75%;
+    }
+}
+
+@keyframes siirto6 {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 75%;
+    }
+}
+
+#php {
+
+    -webkit-animation: siirto7 3s;
+    -webkit-animation-fill-mode: forwards;
+    animation: siirto7 3s;
+    animation-fill-mode: forwards;
+    position: relative;
+}
+
+
+@-webkit-keyframes siirto7 {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 25%;
+    }
+}
+
+@keyframes siirto7 {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 25%;
+    }
+}
+
+/*---------------------------------------------------------------------------*/
+
+/*PROJEKTI GALLERIA-OSIO*/
+
+/*---------------------------------------------------------------------------*/
+
+.container {
+    margin-top: 20px;
+}
+
+#kuvagalleria {
+    height: auto;
+    margin-top: 0px;
+}
+
+.kalleria {
+    margin-bottom: 30px !important;
+    padding-top: 50px !important;
+    padding-bottom: 30px !important;
+    text-align: center;
+}
+
+.kalleria h1 {
+    font-size: 63px;
+}
+
+
+/*---------------------------------------------------------------------------*/
+
+/*PROJEKTI GALLERIAN BUTTON*/
+
+/*---------------------------------------------------------------------------*/
+
+.btn-primary:hover {
+    border-color: inherit;
+}
+
+.btn-info:hover {
+    background-color: #379aff;
+    border-color: inherit;
+}
+
+.nappula-2 {
+    position: relative;
+    border-radius: 25px !important;
+    border: inherit;
+}
+
+.nappula {
+    font-size: 15px;
+    line-height: 1;
+    color: #fff;
+    letter-spacing: 0.025em;
+    background: #379aff;
+    padding: 11px 0 11px;
+    cursor: pointer;
+    border: 1px solid;
+    border-color: #fff;
+    border-radius: 5px;
+    min-width: 120px;
+    overflow: hidden;
+    position: absolute;
+}
+
+.nappula span {
+    display: block;
+    position: relative;
+    z-index: 10;
+
+}
+
+.nappula:after,
+.nappula:before {
+    padding: 18px 0 11px;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: calc(-100% - 30px);
+    height: calc(100% - 0px);
+    width: calc(100% + 20px);
+    color: #fff;
+    border-radius: 2px;
+    transform: skew(-25deg);
+
+}
+
+.nappula:after {
+    background: #fff;
+    transition: left 0.8s cubic-bezier(0.86, 0, 0.07, 1) 0.2s;
+    z-index: 0;
+    opacity: 0.8;
+}
+
+.nappula:before {
+    background: #13c276;
+    z-index: 5;
+    transition: left 1s cubic-bezier(0.86, 0, 0.07, 1);
+}
+
+.nappula:hover:after {
+    left: calc(0% - 10px);
+    transition: left 0.8s cubic-bezier(0.86, 0, 0.07, 1);
+}
+
+.nappula:hover:before {
+    left: calc(0% - 10px);
+    transition: left 1s cubic-bezier(0.86, 0, 0.07, 1);
+}
+
+
+
+
+
+
+
+.filter-button {
+    font-size: 18px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    text-align: center;
+    color: #fff;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, .5);
+    margin-bottom: 30px;
+
+}
+
+.filter-button:hover {
+    font-size: 18px;
+    border: 1px solid #BDBDBD;
+    border-radius: 5px;
+    text-align: center;
+    color: #000;
+    background-color: rgba(255, 255, 255, 0.3);
+
+
+
+}
+
+.btn-default:active .filter-button:active {
+    background-color: #BDBDBD;
+    color: white;
+}
+
+.port-image {
+    width: 100%;
+}
+
+.gallery_product {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding-left: 0px;
+}
+
+
+.snip1585 {
+    background-color: #000;
+    color: #fff;
+    display: inline-block;
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    margin: 8px;
+    display: block;
+    max-width: auto;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+
+}
+
+.snip1585 img {
+    max-width: 100%;
+
+    -moz-transition: all 0.7s;
+    -webkit-transition: all 0.7s;
+    transition: all 0.7s;
+}
+
+.snip1585:hover img {
+    -moz-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+.snip1585 .modal-header:hover img {
+    -moz-transform: inherit;
+    -webkit-transform: inherit;
+    transform: inherit;
+}
+
+.snip1585 .modal-header img {
+    -moz-transform: inherit;
+    -webkit-transform: inherit;
+    transform: inherit;
+}
+
+
+.snip1585 * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all 0.45s ease;
+    transition: all 0.45s ease;
+}
+
+.snip1585:before,
+.snip1585:after {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content: '';
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    z-index: 1;
+    opacity: 0;
+}
+
+.snip1585 figcaption {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    align-items: center;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 1.1em;
+    opacity: 0;
+    z-index: 2;
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+}
+
+.snip1585 h3 {
+    font-size: 1em;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.snip1585 h3 span {
+    display: block;
+    font-weight: 700;
+}
+
+.snip1585 a {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 3;
+}
+
+.snip1585:hover > img,
+.snip1585.hover > img {
+    opacity: 0.7;
+}
+
+.snip1585:hover:before,
+.snip1585.hover:before,
+.snip1585:hover:after,
+.snip1585.hover:after {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+}
+
+.snip1585:hover figcaption,
+.snip1585.hover figcaption {
+    opacity: 1;
+    -webkit-transition-delay: 0.1s;
+    transition-delay: 0.1s;
+}
+
+
+
+
+/* Profiili */
+
+.otayhteytta {
+    text-align: center;
+}
+
+.snip1559 {
+    font-family: 'Lato', Arial, sans-serif;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    margin: 8px;
+    min-width: 250px;
+    max-width: 450px;
+    width: 100%;
+    background-color: #F5F5F5;
+    color: #2B2B2B;
+    text-align: center;
+    font-size: 16px;
+
+}
+
+.snip1559 * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.snip1559 .profile-image {
+    padding: 15% 10% 0;
+}
+
+.snip1559 .profile-image img {
+    max-width: 100%;
+    vertical-align: top;
+    position: relative;
+    border-radius: 50%;
+    max-width: 40%;
+}
+
+.snip1559 figcaption {
+    padding: 5% 10% 15%;
+}
+
+.snip1559 h3 {
+    font-family: 'Oswald';
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    margin: 3px 0;
+}
+
+.snip1559 h5 {
+    font-weight: 400;
+    margin: 0;
+    text-transform: uppercase;
+    color: #888;
+    letter-spacing: 1px;
+}
+
+.snip1559 .icons i {
+    color: #999;
+    display: inline-block;
+    margin-right: 5px;
+    font-size: 1.5em;
+}
+
+.snip1559 .icons i:hover {
+    color: #555;
+}
+
+.snip1559 .icons i a {
+    text-decoration: none;
+}
+
+#myModal2 {
+    padding-right: 0px !important;
+}
+
+
+
+.modal-content {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.modal-header {
+    border-bottom: 0px;
+    padding: inherit;
+
+}
+
+.modal-body {
+    border-top: 0px;
+    color: black;
+}
+
+.modalsisalto {
+    font-size: 18px;
+    font-family: sans-serif;
+}
+
+.modal-footer {
+    border-top: 0px;
+}
+
+footer {
+    display: block;
+    height: 700px;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 50px;
+    background-color: #F5F5F5;
+
+}
+
+.oikeus {
+    margin-top: 130px;
+
+}
+
+
+
+
+/* TÄSTÄ ALKAA TABLETTI OSUUS*/
+
+@media only screen and (max-width: 992px) {
+
+
+    #otsikko1 {
+        font-size: 36px !important;
+    }
+
+    #otsikko2 {
+        font-size: 36px !important;
+    }
+
+    #otsikko3 {
+        font-size: 36px !important;
+    }
+    #kuvagalleria {
+        height: auto;
+        margin-top: 0px;
+    }
+
+    .teksti2 {
+        padding-right: 10px;
+        padding-left: 10px;
+
+    }
+
+    .teksti2 h1 {
+        font-size: 50px;
+    }
+
+    .teksti2 p {
+        font-size: 25px;
+
+    }
+
+
+
+    #tekstikohdat h2 {
+        font-size: 35px;
+    }
+
+    .sanoma {
+        text-align: justify;
+    }
+
+    .olli {
+        -webkit-background-attachment: scroll;
+        -moz-background-attachment: scroll;
+        -o-background-attachment: scroll;
+        background-attachment: scroll;
+    }
+
+
+}
+
+/* TÄSTÄ ALKAA MOBIILI OSUUS*/
+
+@media only screen and (max-width: 767px) {
+
+    .mobiili-sijainti {
+        margin-top: 40px;
+    }
+
+    .nappula {
+        font-size: 13px;
+    }
+
+    .osio {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    #kuvagalleria {
+        height: auto;
+        margin-top: inherit;
+    }
+
+    .teksti2 {
+        padding-right: 10px;
+        padding-left: 10px;
+
+    }
+
+    .teksti2 h1 {
+        font-size: 36px;
+    }
+
+    .teksti2 p {
+        font-size: 17px;
+
+    }
+
+
+
+    .fa-pencil {
+        color: #29B6F6 !important;
+        font-size: 26px;
+    }
+
+    .fa-male {
+        color: #29B6F6 !important;
+        font-size: 26px;
+    }
+
+    .fa-gear {
+        color: #29B6F6 !important;
+        font-size: 26px;
+    }
+
+    .fa-desktop {
+        color: #29B6F6 !important;
+        font-size: 26px;
+    }
+
+    .fa-check {
+        padding-right: 10px;
+        color: #00E640 !important;
+        font-size: 20px;
+    }
+
+    #tekstikohdat h2 {
+        font-size: 30px;
+    }
+
+    .sanoma {
+        text-align: left;
+    }
+
+    .kalleria h1 {
+        font-size: 36px;
+    }
+
+    /* profiili */
+    .snip1559 {
+        max-width: 250px;
+    }
+
+    footer {
+        display: block;
+        height: auto;
+        font-size: 15px;
+        text-align: center;
+        padding-top: 40px;
+        padding-bottom: 5px;
+
+
+    }
+
+    .modalsisalto {
+        font-size: 14px;
+    }
+
+    .snip1585 {
+        background-color: #000;
+        color: #fff;
+        display: inline-block;
+        font-family: 'Roboto', sans-serif;
+        font-size: 14px !important;
+        margin: 8px;
+        display: block;
+        max-width: auto;
+        height: auto;
+        overflow: hidden;
+        position: relative;
+        text-align: center;
+        width: 100%;
+    }
+
+
+
+}
